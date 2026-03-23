@@ -1,5 +1,5 @@
 from text_analysis import get_text_data
-from menu import print_menu,print_text_analysis,print_text_analysis_phase_2
+from menu import print_menu,print_text_analysis,print_text_analysis_phase_2,print_character_analysis_phase_3
 
 while True:
     print_menu()
@@ -11,13 +11,15 @@ while True:
         text = get_text_data()
         print_text_analysis(text)
         print_text_analysis_phase_2(text)
+        print_character_analysis_phase_3(text)
         print()
 
     elif user_choice == 2:
         texts = input("Enter Your Text Here: ")
         print()
         print_text_analysis(texts)
-        print_text_analysis_phase_2(text)
+        print_text_analysis_phase_2(texts)
+        print_character_analysis_phase_3(texts)
         print()
 
     elif user_choice == 3:
